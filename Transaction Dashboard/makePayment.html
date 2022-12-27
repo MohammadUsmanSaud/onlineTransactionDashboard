@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quid Overview </title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Css file -->
+    <link rel="stylesheet" type="text/css" href="css/quidDashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/quidDashboardMediaQuery.css">
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css" href="font/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Righteous Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Karla Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+<body id="main-wrapper" class="overviewDashboard">
+
+    <!-- Dashboard overview -->
+    <Section>
+        <div class="sidebar">
+            <div class="p-3 spanDisplay">
+                <div class="logoBig my-3">
+                    <img src="images/QuidLogo.png" class="img-fluid" alt="">
+                </div>
+                <div class="logoSmall my-3 d-none">
+                    <img src="images/quidLogoSmall.png" class="img-fluid" alt="">
+                </div>
+                <div class="makePaymentBtn text-center">
+                    <label class="btn" style="position: relative;" for="individualOpt">
+                        <input type="radio" class="btn-check" name="option" id="individualOpt" autocomplete="off" value="individual" checked>
+                        <span>Make Payment</span><i class="bi bi-plus-circle ms-2"></i>
+                    </label>
+                </div>   
+                <a class="active" href="#"><i class="bi bi-grid me-3"></i><span>Overview</span></a>
+                <a href="#"><i class="bi bi-cart3 me-3"></i><span>Withdrawal</span></a>
+                <a href="#"><i class="bi bi-cart3 me-3"></i><span>Transaction</span></a>
+                <a href="#"><i class="bi bi-people me-3"></i><span>Dispute</span></a>
+                <a href="#"><i class="bi bi-bag-dash me-3"></i><span>Help</span></a>
+                <div class="logoutSidebar">
+                    <a href="#"><i class="bi bi-bag-dash me-3"></i><span>Logout</span></a>
+                </div>
+                <a href="#"><i class="bi bi-gear me-3"></i><span>Settings</span></a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <nav class="navbar py-3">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <button onclick="myFunction()" class="hamburger me-5"><i class="bi bi-list"></i></button>
+                        <form class="d-flex">
+                            <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                            <input class="form-control me-2" type="search" placeholder="Search Anything..." aria-label="Search">
+                        </form>
+                    </div>
+                    <div>
+                        <div class="popup" onclick="popupFunction()"><i class="bi bi-chat-left-text mx-4"></i>
+                            <span class="popuptext" id="myPopup">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Notification</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="flex-shrink-0">
+                                                <div style="background: #F6FBFF; padding: 10px;">
+                                                    <i class="bi bi-chat-left-text"></i>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>Emerson Curtis <span style="color: #CED0D8;">@curtis</span></h6>
+                                                <h6 style="color: #CED0D8;">Comment On <span style="color:#3A3939">Coursea-Dashboard Courses</span></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="flex-shrink-0">
+                                                <div style="background: #FFF3F2;; padding: 10px;">
+                                                    <i class="bi bi-hand-thumbs-up"></i>                                        
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>Marley Geidt <span style="color: #CED0D8;">@marley</span></h6>
+                                                <h6 style="color: #CED0D8;">Likes on <span style="color:#3A3939">Coursea-Dashboard Courses</span></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="businessBtn mt-3">
+                                            <a src="#" style="color: #222B50;">See All Notifications</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                        <i class="bi bi-bell me-4"></i>
+                        <img src="./images/navbarPerson.png" alt="#" class="img-fluid rounded-circle navbarImg">
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Dashboard main -->
+            <section class="dashboardMainBg px-5 py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="upload-btn-wrapper text-center">
+                            <div class="bigUploadIcon">
+                                <button class="btn mb-3"><i class="bi bi-camera"></i></button>
+                                <input type="file" name="myfile" />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="btn"><i class="bi bi-camera"></i></button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn"><i class="bi bi-camera"></i></button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-4" style="background-color: #FFFFFF;">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <label for="">Product Name</label>
+                                        <div class="input-group">
+                                            <input type="text" name="productname" class="form-control" id="product_name" placeholder="Enter Your Product Name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <label for="">Product Link</label>
+                                        <div class="input-group">
+                                            <input type="text" name="productlink" class="form-control" id="product_link" placeholder="Enter Your Product Link" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <label for="">Product Description</label>
+                                        <div class="input-group">
+                                            <input type="text" name="productdescription" class="form-control" id="product_description" placeholder="Enter Your Product Description" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <label for="">Delivery Fee</label>
+                                        <div class="input-group">
+                                            <input type="text" name="deliveryFee" class="form-control" id="delivery_fee" placeholder="Delivery Fee" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-4">
+                                        <label for="">Seller Email/Account Number</label>
+                                        <div class="input-group">
+                                            <input type="email" name="selleremail" class="form-control" id="seller_email" placeholder="Seller Email or Account Number" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <label for="">Category</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Electronics</option>
+                                            <option value="1">Clothes</option>
+                                            <option value="2">Furniture</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <label for="">Price</label>
+                                        <div class="input-group">
+                                            <input type="text" name="price" class="form-control" id="price" placeholder="Price" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <label for="">Quantity</label>
+                                        <div class="input-group">
+                                            <input type="number" name="quantity" class="form-control" id="quantity" placeholder="Quantity" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="makePaymentBtn text-center">
+                                            <a href="#">Send Invoice</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div> 
+    </Section>
+    <!-- Bootstrap Script -->
+    <script src="https://kit.fontawesome.com/d03f1168b0.js" crossorigin="anonymous"></script>
+    <!-- Owl Carousel Script -->
+    <script src="javaScript/owl.carousel.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d03f1168b0.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="javaScript/quidDashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

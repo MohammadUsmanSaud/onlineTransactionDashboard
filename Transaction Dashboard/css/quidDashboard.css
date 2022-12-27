@@ -1,0 +1,589 @@
+html, body{
+    overflow-x:hidden;
+}
+h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+h2{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    color: #3A3939;
+}
+a{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+h4{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3A3939;
+}
+h5{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3A3939;
+}
+h6{
+    font-size: 12px;
+}
+
+.individualBtn .btn:first-child:active{
+    border-color: #382D70;
+    background-color: #382D70;
+}
+.businessBtn .btn:first-child:active{
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+a:hover{
+    color: #FFFFFF;
+}
+.createAccount .individualBtn a{
+    font-size: 16px;
+}
+.createAccount a{
+    font-size: 12px;
+}
+.passwordToggle{
+    margin-top: 0.3rem !important;
+    margin-left: 92% !important;
+    display:inline; 
+    position: absolute;
+}
+.individualBtn{
+    background: #382D70;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(-45deg, transparent 3%, #382D70 0%);
+}
+.businessBtn{
+    height: 45px;
+    width: 500px;
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    border: 1px solid #382D70;
+    color: #382D70;
+    /* background: linear-gradient(-45deg, transparent 3%, #382D70 0%); */
+    /* -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 30px, calc(100% - 30px) 0%, 0% 0%);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 30px, calc(100% - 30px) 0%, 0% 0%); */
+}
+
+.businessBtn:focus-within{
+    border: none;
+    color: #F5F5F5 !important;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(-45deg, transparent 3%, #382D70 0%);
+}
+.account-block .overlay {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+.account-block {
+    padding: 0;
+    background-image: url("../images/rectangleImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.account-block .account-testimonial {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 100px;
+    right: 0;
+    top: 30%;
+}
+.text-theme {
+    color: #5369f8 !important;
+}
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #382D70;
+}
+.form-control{
+    border-color: #A498E340;
+}
+.input-group ::placeholder{
+    color: #CED0D8;;
+}
+.form-select{
+    color: #CED0D8;
+    border-color: #A498E340;
+    box-shadow: none !important;
+}
+.form-select:focus{
+    border-color: #382D70;
+}
+.makePaymentBtn{
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(-45deg, transparent 7%, #029754 0%);
+}
+.makePaymentBtn label{
+    color: #FFFFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+.sidebar{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    width: 220px;
+}
+.sidebar a{
+    display: block;
+    color: black;
+    padding: 16px 0px 16px 5px;
+    text-decoration: none;
+    position: relative;
+}
+.sidebar a.active {
+    background-color: #F7F7F7;;
+    color:#3A3939;
+    opacity: 1;
+}
+.sidebarSmall .sidebar{
+    width: 72px;
+    transition: 1s;
+    overflow: visible;
+}
+.sidebar span{
+font-size: 20px;
+}
+.sidebarSmall .spanDisplay span{
+    display: none;
+}
+.sidebarSmall .makePaymentBtn{
+    display: none;
+}
+.sidebar .makePaymentBtn span{
+    font-size: 15px;
+}
+.sidebar a{
+    font-size: 25px;
+}
+.sidebarSmall a{
+    font-size: 25px;
+    position: relative;
+}
+.logoutSidebar a{
+    color: #EB4335;
+    opacity: 1;
+}
+.navbar ::placeholder{
+    color: #CED0D8;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+body::-webkit-scrollbar, .sidebar::-webkit-scrollbar, .sidebarSmall::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track, .sidebarSmall::-webkit-scrollbar-track{
+    background: white;
+}
+body::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb, .sidebarSmall::-webkit-scrollbar-thumb{
+    background-color: #382D70;
+    border-radius: 50px;       
+    border: 1px solid black;  
+}
+.navbar input{
+    border: none;
+    background: transparent;
+}
+.navbarImg{
+    width: 48px;
+    height: 48px;
+}
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content{
+    margin-left: 200px;
+    padding: 16px 0px 16px 20px;
+}
+.sidebarSmall .content{
+    transition: 1s;
+    margin-left: 60px;
+}
+.dashboardMainBg{
+    background: #F5F5F5;
+}
+.overviewDashboard h6{
+    color: #8C91A2;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+.overviewDashboard .individualBtn h2{
+    color: #FFFFFF;
+    font-weight: 300;
+}
+.balanceDiv{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(87, 59, 255, 0.2);
+    border-radius: 48px;
+    width: 52px;
+    height: 52px;
+}
+.pendingDiv{
+    background: #382D70;
+    box-shadow: 0px 10px 30px rgba(87, 59, 255, 0.2);
+    border-radius: 48px;
+    width: 52px;
+    height: 52px;
+}
+.pendingDiv .bi-bag-dash::before{
+    color: #FFFFFF;
+}
+.pendingDiv .bi-arrow-down-up::before{
+    color: #FFFFFF;
+    transform: rotate(50deg);
+}
+.withdrawBtn{
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(-45deg, transparent 7%, #FFFFFF 0%);
+}
+.pendingDivBg{
+    background: linear-gradient(-45deg, transparent 7%, #FFFFFF 0%);
+    padding: 1rem; 
+}
+.tableHeading{
+    background-color: #FFFFFF;
+}
+.tableHeading button{
+    color: #382D70;
+    border: none;
+    background: transparent;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+}
+tr{
+    text-transform: capitalize;
+}
+td button{
+    border: none;
+    background: transparent;
+    opacity: 0.6;
+}
+tr th{
+    color: #8C91A2;
+}
+th .row{
+    color: #3A3939;
+}
+td, th{
+    border-style: none;
+}
+table{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3A3939;
+    background-color: #FFFFFF;
+}
+td .flex-grow-1{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.marginB{
+    margin-bottom: 2rem;
+}
+.bi-x-lg{
+    float: right;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+} 
+.upload-btn-wrapper .btn{
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: dashed;
+    width: 129px;
+    height: 93px;
+    font-size: 35px;
+}
+.upload-btn-wrapper input[type=file]{
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.bigUploadIcon .btn{
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: dashed;
+    width: 280px;
+    height: 280px;
+    font-size: 70px;
+}
+.upload-btn-wrapper .btn:first-child:hover{
+    background-color: white;
+    border-color: black;
+}
+.hamburger{
+    border: 3px solid #382D70;
+    background: transparent;
+    opacity: 1;
+    border-radius: 10px;
+}
+.bi-plus-circle{
+    font-size: 15px;
+}
+.sidebarSmall a:hover span{
+    display: block;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: black;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 2px 5px 2px 2px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    opacity: 0.8;
+}
+.sidebarSmall a:hover span::before {
+    content: '';
+    width: 0px;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 15px solid black;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 1px;
+}
+.sidebarSmall .logoBig{
+    display: none;
+}
+.sidebarSmall .logoSmall{
+    display: block !important;
+}
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.popup .popuptext{
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: -80px;
+    width: 470px;
+    right: 20px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 100px rgba(68, 68, 79, 0.1);
+}
+.popup .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.popupAcc{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.popupAcc .popuptextAcc{
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: -80px;
+    width: 470px;
+    right: 20px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 100px rgba(68, 68, 79, 0.1);
+}
+.popupAcc .showAcc{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+} 
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.popuptext .bi-chat-left-text{
+    color: Blue; 
+    font-size: 25px;
+}
+.popuptext .bi-hand-thumbs-up{
+    color: red;
+    font-size: 25px;
+}
+.popuptext h6{
+    color: #3A3939;;
+}
+.popuptext .businessBtn{
+    text-align: center;
+}
+.moneyPreview{
+    padding: 50px 350px 50px 350px;
+}
+.moneyPreview h1{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    text-align: center;
+    color: #3A3939;
+}
+.moneyPreview h5{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1E1E1E;
+    text-transform: capitalize;
+}
+.moneyPreview h6{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3A3939;
+    text-transform: capitalize;
+}
+.moneyPreview span{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 140%;
+    color: #1E1E1E;
+    text-transform: capitalize;
+    float: right;
+}
+.sendReceivePage{
+    padding: 15% 20% 50% 20%;
+}
+.sendReceivePage h1{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 150%;
+    text-align: center;
+    color: #3A3939;
+}
+.sendReceivePage{
+    background: #F5F5F5;;
+}
+.sendReceivePage h2{
+    font-size: 32px;
+    margin-top: 10px;
+}
+.makePaymentForm .makePaymentBtn{
+    display:block;
+}
+.makePaymentForm .makePaymentBtn a{
+    font-size: 18px;
+}
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.bi-list::before{
+    color: #382D70;
+}
+.individualBtn a:hover span{
+}

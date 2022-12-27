@@ -1,0 +1,56 @@
+/* Mobile 480 */
+@media only screen and (max-device-width: 480px)
+and (min-device-width:320px){
+    h1{
+        font-size: 34px;
+    }
+    h2{
+        font-size: 29px;
+    }
+    a{
+        font-size: 16px;
+    }
+}
+
+/* Tablets 768 */
+@media only screen and (min-device-width: 768px)
+and (max-device-width: 1023px){
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .sidebar{
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFFF;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    
+}
+
+/* Laptop 1024 */
+@media only screen and (min-device-width: 1024px)
+and (max-device-width:1439px){
+    h1{
+        font-size: 58px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .forgotPassword h2{
+        font-size: 34px;
+    }
+    .forgotPassword h6{
+        font-size: 10px;
+    }
+}
